@@ -53,7 +53,7 @@ def createMenu(title, *menu):
             if (a <= 5):
                 return a
             else:
-                print("Please Enter A Valid Input")
+                print("Please Enter An Valid Option Number")
         except ValueError:
             print("Please Enter A Valid Input")
 

@@ -40,7 +40,7 @@ def kmph_to_mph():
 
 
 def createMenu(title, *menu):
-    print(title.center(40, "-").upper())
+    print(title.center(40, "~").upper())
     print(f"1. {menu[0]}")
     print(f"2. {menu[1]}")
     print(f"3. {menu[2]}")

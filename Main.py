@@ -57,18 +57,20 @@ def createMenu(title, *menu):
         except ValueError:
             print("Please Enter A Valid Input")
 
+def main():
+  selection = createMenu("MENU", "Meters to Yards", "Kilograms to Pounds",
+                        "Celsius to Fahrenheit",
+                        "Kilometres per hour to miles per hour")
 
-selection = createMenu("MENU", "Meters to Yards", "Kilograms to Pounds",
-                       "Celsius to Fahrenheit",
-                       "Kilometres per hour to miles per hour")
+  if selection == 1:
+      meters_to_yards()
+  elif selection == 2:
+      kilograms_to_pounds()
+  elif selection == 3:
+      celcius_to_fahrenheit()
+  elif selection == 4:
+      kmph_to_mph()
+  elif selection == 5:
+      print("Exiting....")
 
-if selection == 1:
-    meters_to_yards()
-elif selection == 2:
-    kilograms_to_pounds()
-elif selection == 3:
-    celcius_to_fahrenheit()
-elif selection == 4:
-    kmph_to_mph()
-elif selection == 5:
-    print("Exiting....")
+main()

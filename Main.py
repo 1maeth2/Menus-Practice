@@ -46,6 +46,8 @@ def createMenu(title, *menu):
     print(f"3. {menu[2]}")
     print(f"4. {menu[3]}")
     print("5. Exit")
+    print("\033[1m"+"".center(40, "-").upper()+"\033[0m")
+
 
     while True:
         try:
